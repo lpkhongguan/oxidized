@@ -155,7 +155,7 @@ module Oxidized
         ssh_opts[:logger]  = Oxidized.logger
         ssh_opts[:verbose] = Logger::DEBUG
       end
-
+      ssh_opts[:append_all_supported_algorithms] = true
       ssh_opts
     end
   end
